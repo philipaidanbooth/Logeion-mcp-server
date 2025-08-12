@@ -17,7 +17,7 @@ except OSError:
 
 
 @mcp.tool()
-async def get_word(word):
+def get_word(word):
     try: 
         conn = sqlite3.connect("dvlg-wheel-mini.sqlite")
         cursor = conn.cursor()
