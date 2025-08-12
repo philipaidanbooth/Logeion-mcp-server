@@ -4,8 +4,13 @@ from mcp.server.fastmcp import FastMCP
 import sqlite3
 import spacy
 import logging
+import os
 
 mcp = FastMCP("logeion")
+
+# Get the directory where this script is located
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DATABASE_PATH = os.path.join(SCRIPT_DIR, "dvlg-wheel-mini.sqlite")
 
 # Load spaCy model once at module level
 try:
@@ -19,7 +24,7 @@ except OSError:
 @mcp.tool()
 def get_word(word):
     try: 
-        conn = sqlite3.connect("dvlg-wheel-mini.sqlite")
+        conn = sqlite3.connect(DATABASE_PATH)
         cursor = conn.cursor()
         
         try:
