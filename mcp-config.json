@@ -59,26 +59,26 @@
         "description": "A powerful Latin dictionary MCP server that provides access to comprehensive Latin word definitions with automatic lemmatization support using spaCy's Latin language model.",
         "author": {
           "name": "Philip Booth",
-          "email": "philip.booth@example.com",
-          "github": "philipbooth",
-          "website": "https://github.com/philipbooth"
+          "email": "philipaidanbooth@gmail.com",
+          "github": "philipaidanbooth",
+          "website": "https://github.com/philipaidanbooth"
         },
-        "homepage": "https://github.com/philipbooth/logeion-mcp-server",
-        "repository": "https://github.com/philipbooth/logeion-mcp-server.git",
+        "homepage": "https://github.com/philipaidanbooth/logeion-mcp-server",
+        "repository": "https://github.com/philipaidanbooth/logeion-mcp-server.git",
         "license": "MIT",
         "keywords": ["latin", "dictionary", "lemmatization", "classical-languages", "mcp-server", "philology", "education"],
         "categories": ["language", "education", "reference", "classical-studies"],
         "tags": ["latin", "dictionary", "lemmatization", "spacy", "sqlite", "ancient-languages", "classical-literature"],
         "social": {
-          "github": "https://github.com/philipbooth",
-          "twitter": "https://twitter.com/philipbooth",
-          "linkedin": "https://linkedin.com/in/philipbooth",
+          "github": "https://github.com/philipaidanbooth",
+          "twitter": "https://twitter.com/PhilipB77106613",
+          "linkedin": "https://www.linkedin.com/in/philip-a-booth/",
           "discord": "https://discord.gg/mcp"
         },
         "community": {
-          "issues": "https://github.com/philipbooth/logeion-mcp-server/issues",
-          "discussions": "https://github.com/philipbooth/logeion-mcp-server/discussions",
-          "wiki": "https://github.com/philipbooth/logeion-mcp-server/wiki",
+          "issues": "https://github.com/philipaidanbooth/logeion-mcp-server/issues",
+          "discussions": "https://github.com/philipaidanbooth/logeion-mcp-server/discussions",
+          "wiki": "https://github.com/philipaidanbooth/logeion-mcp-server/wiki",
           "mcp_hub": "https://mcp.hub"
         }
       },
