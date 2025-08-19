@@ -1,10 +1,10 @@
 {
     "mcpServers": {
       "logeion": {
-        "command": "python",
+        "command": "/Users/philipbooth/Logeion-mcp-server/venv/bin/python",
         "args": [
           "/Users/philipbooth/Logeion-mcp-server/logeion.py"
         ]
       }
     }
-  }
+}

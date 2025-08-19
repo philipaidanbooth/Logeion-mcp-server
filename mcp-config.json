@@ -1,0 +1,137 @@
+{
+  "mcpServers": {
+    "logeion": {
+      "command": "python",
+      "args": ["logeion.py"],
+      "env": {
+        "PYTHONUNBUFFERED": "1",
+        "LOG_LEVEL": "INFO"
+      },
+      "description": "Logeion MCP Server - Latin dictionary with lemmatization support",
+      "capabilities": {
+        "tools": [
+          {
+            "name": "get_word",
+            "description": "Search for Latin words in the dictionary database with automatic lemmatization",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "word": {
+                  "type": "string",
+                  "description": "The Latin word to search for"
+                }
+              },
+              "required": ["word"]
+            }
+          },
+          {
+            "name": "get_server_info",
+            "description": "Get information about the Logeion MCP server including status and capabilities",
+            "inputSchema": {
+              "type": "object",
+              "properties": {}
+            }
+          },
+          {
+            "name": "explore_database",
+            "description": "Explore the database structure and sample data for development and debugging",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "table_name": {
+                  "type": "string",
+                  "description": "The table to explore",
+                  "default": "Entries"
+                },
+                "limit": {
+                  "type": "integer",
+                  "description": "Maximum number of sample rows to return",
+                  "default": 10
+                }
+              }
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "name": "Logeion MCP Server",
+        "version": "1.0.0",
+        "description": "A powerful Latin dictionary MCP server that provides access to comprehensive Latin word definitions with automatic lemmatization support using spaCy's Latin language model.",
+        "author": {
+          "name": "Philip Booth",
+          "email": "philip.booth@example.com",
+          "github": "philipbooth",
+          "website": "https://github.com/philipbooth"
+        },
+        "homepage": "https://github.com/philipbooth/logeion-mcp-server",
+        "repository": "https://github.com/philipbooth/logeion-mcp-server.git",
+        "license": "MIT",
+        "keywords": ["latin", "dictionary", "lemmatization", "classical-languages", "mcp-server", "philology", "education"],
+        "categories": ["language", "education", "reference", "classical-studies"],
+        "tags": ["latin", "dictionary", "lemmatization", "spacy", "sqlite", "ancient-languages", "classical-literature"],
+        "social": {
+          "github": "https://github.com/philipbooth",
+          "twitter": "https://twitter.com/philipbooth",
+          "linkedin": "https://linkedin.com/in/philipbooth",
+          "discord": "https://discord.gg/mcp"
+        },
+        "community": {
+          "issues": "https://github.com/philipbooth/logeion-mcp-server/issues",
+          "discussions": "https://github.com/philipbooth/logeion-mcp-server/discussions",
+          "wiki": "https://github.com/philipbooth/logeion-mcp-server/wiki",
+          "mcp_hub": "https://mcp.hub"
+        }
+      },
+      "requirements": {
+        "python": ">=3.8",
+        "dependencies": [
+          "mcp>=1.12.0",
+          "spacy>=3.7.0",
+          "pydantic>=2.0.0"
+        ],
+        "models": [
+          "la_core_web_lg"
+        ]
+      },
+      "deployment": {
+        "docker": {
+          "image": "logeion-mcp-server:latest",
+          "dockerfile": "Dockerfile",
+          "compose": "docker-compose.yml"
+        },
+        "kubernetes": {
+          "deployment": "k8s-deployment.yaml"
+        }
+      },
+      "testing": {
+        "testSuite": "test_logeion.py",
+        "coverage": "requirements.txt",
+        "examples": [
+          {
+            "tool": "get_word",
+            "input": {"word": "amare"},
+            "description": "Search for the Latin verb 'to love'"
+          },
+          {
+            "tool": "get_word",
+            "input": {"word": "amo"},
+            "description": "Search for 'I love' which will find the lemma 'amare'"
+          },
+          {
+            "tool": "get_server_info",
+            "input": {},
+            "description": "Get server status and capabilities"
+          }
+        ]
+      },
+      "status": {
+        "maintenance": "active",
+        "lastUpdated": "2024-01-20",
+        "version": "1.0.0",
+        "stability": "stable",
+        "productionReady": true
+      }
+    }
+  }
+}
+
