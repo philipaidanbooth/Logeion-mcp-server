@@ -215,7 +215,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - Built with the [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) framework
-- Uses [spaCy](https://spacy.io/) for Latin language processing
+- Uses [spaCy](https://spacy.io/) for Latin language processing with [LatinCy](https://github.com/patrickschneider/LatinCy) by Patrick Burns
 - Integrates with the Logeion Latin dictionary database
 - Inspired by classical language education and digital humanities
 

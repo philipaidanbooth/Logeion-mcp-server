@@ -66,9 +66,9 @@
         "homepage": "https://github.com/philipaidanbooth/logeion-mcp-server",
         "repository": "https://github.com/philipaidanbooth/logeion-mcp-server.git",
         "license": "MIT",
-        "keywords": ["latin", "dictionary", "lemmatization", "classical-languages", "mcp-server", "philology", "education"],
+        "keywords": ["latin", "dictionary", "lemmatization", "classical-languages", "mcp-server", "philology", "education", "latincy"],
         "categories": ["language", "education", "reference", "classical-studies"],
-        "tags": ["latin", "dictionary", "lemmatization", "spacy", "sqlite", "ancient-languages", "classical-literature"],
+        "tags": ["latin", "dictionary", "lemmatization", "spacy", "sqlite", "ancient-languages", "classical-literature", "latincy"],
         "social": {
           "github": "https://github.com/philipaidanbooth",
           "twitter": "https://twitter.com/PhilipB77106613",
@@ -124,13 +124,32 @@
           }
         ]
       },
-      "status": {
-        "maintenance": "active",
-        "lastUpdated": "2024-01-20",
-        "version": "1.0.0",
-        "stability": "stable",
-        "productionReady": true
-      }
+              "status": {
+          "maintenance": "active",
+          "lastUpdated": "2024-01-20",
+          "version": "1.0.0",
+          "stability": "stable",
+          "productionReady": true
+        },
+        "acknowledgments": {
+          "latincy": {
+            "name": "LatinCy",
+            "author": "Patrick Burns",
+            "github": "https://github.com/patrickschneider/LatinCy",
+            "description": "Latin language processing pipeline for spaCy",
+            "license": "MIT"
+          },
+          "spacy": {
+            "name": "spaCy",
+            "description": "Industrial-strength Natural Language Processing in Python",
+            "url": "https://spacy.io/"
+          },
+          "mcp": {
+            "name": "Model Context Protocol",
+            "description": "Standard for AI model tool integration",
+            "url": "https://modelcontextprotocol.io/"
+          }
+        }
     }
   }
 }
